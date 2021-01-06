@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-xl-1-12">
+            <form action="{url_app}/site/person" method="post">
+                <div class="form-group">
+                    <img src="{url_static}assets/img/thalamus.png" class="img-fluid" alt="Thalamus" width="350px">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="form-group" style="display: {display}">
+                    <div class="alert alert-danger" role="alert">
+                        {error_message}
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
